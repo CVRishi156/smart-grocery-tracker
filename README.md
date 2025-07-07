@@ -73,14 +73,6 @@ npm run dev
 
 
 ```
-
----
-
-
-
-
-
-
 ---
 
 ## **How to Contribute** 🤝  
