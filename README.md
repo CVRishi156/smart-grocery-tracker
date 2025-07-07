@@ -74,8 +74,7 @@ npm run dev
 
 ```
 ---
-
-## **How to Contribute** 🤝  
+## **HOW TO CONTRIBUTE** 🤝  
 1. **Fork** the repository.  
 2. Create a branch:  
    ```bash
