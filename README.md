@@ -19,11 +19,12 @@ A **web-based application** to track grocery expiry dates, reduce food waste, an
 ---
 
 ## **Technology Stack** 🧰  
-| **Frontend** | **Backend**| **Database**|  
-|--------------|------------|-------------|  
-| HTML5        |  Flask     | MySQL       |  
-| CSS3         |            |             |
-| JavaScript   |            |             |  
+| **Frontend**          | **Backend**    | **Database**    | **Other Tools & Libraries**             |
+| --------------------- | -------------- | --------------- | --------------------------------------- |
+| HTML5                 | Flask (Python) | MySQL / MariaDB | Postman – API testing                   |
+| CSS3                  | Flask-CORS     |                 | JWT – Authentication (PyJWT)            |
+| JavaScript (ES6)      | bcrypt         |                 | Python `mysql-connector` – DB connector |
+| React.js (Planned UI) | Flask-Restful  |                 | dotenv – Environment variable handler   |
 
 ---
 
