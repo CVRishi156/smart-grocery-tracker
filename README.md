@@ -55,16 +55,22 @@ npm install
    JWT_SECRET=your_jwt_secret
    ```
 
-### **4. Run the Application**  
+### **4. Run the backend**  
 ```bash
 python app.py
 ```
-Access at: `http://localhost:3000`  
+Access at: `http://localhost:5000`  
+
+### **5. Run the Frontend** 
+```bash
+npm run dev
+```
 
 ---
 
 ## **Project Structure** 📂  
-```plaintext
+![image](https://github.com/user-attachments/assets/15b193de-7092-4d70-b91b-88521e55a2b6)
+
 
 ```
 
