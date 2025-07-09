@@ -65,13 +65,19 @@ Click SQL tab.
 
 Paste the SQL:
 
+## 🗃️ Database Schema
+
+```sql
 CREATE TABLE groceries (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     expiry_date DATE NOT NULL,
     quantity INT NOT NULL
 );
-Click Go.
+
+Click
+Go
+
 Done! You now have the groceries table set up. 
 
 Configure `.env` file:  
@@ -79,7 +85,7 @@ Configure `.env` file:
    DB_HOST=localhost
    DB_USER=root
    DB_PASSWORD=yourpassword //empty if http://localhost/phpmyadmin logs in without password
-   DB_NAME=smart_gets
+   DB_NAME=grocery_db
    JWT_SECRET=your_jwt_secret //not necessarily needed
    ```
 
