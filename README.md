@@ -81,8 +81,8 @@ CREATE TABLE groceries (
 Done! You now have the groceries table set up.
 
 
- Configure .env File
-```env
+Configure .env File
+
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=               # Leave blank if phpMyAdmin logs in without a password
@@ -90,26 +90,26 @@ DB_NAME=grocery_db
 
 
 
-``env
+
 JWT_SECRET=your_jwt_secret   # Optional but recommended for secured endpoints
 
 ### **4. Run the backend**  
-```bash
-python app.py 
-```
+
+python app.py
+
 Access at: `http://localhost:5000`  
 
 ### **5. Run the Frontend** 
-```bash
-npm run dev
-```
+
+npm run dev //access at 5173
+
 ### **6. Use postman if needed** 
 Test Adding a Grocery Item (Using Postman)
 Endpoint: POST http://localhost:5000/add
 
  Get All Items
 Endpoint:
-GET http://localhost:3000/groceries
+GET http://localhost:5000/groceries
 
 ---
 
