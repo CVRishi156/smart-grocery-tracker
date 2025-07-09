@@ -65,9 +65,6 @@ Click SQL tab.
 
 Paste the SQL:
 
-sql
-Copy
-Edit
 CREATE TABLE groceries (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -76,7 +73,8 @@ CREATE TABLE groceries (
 );
 Click Go.
 Done! You now have the groceries table set up. 
-4. Configure `.env` file:  
+
+Configure `.env` file:  
    ```env
    DB_HOST=localhost
    DB_USER=root
