@@ -66,6 +66,9 @@ Click SQL tab.
 Paste the SQL:
 
  Create groceries Table
+## 🗃️ Database Schema
+
+```sql
 CREATE TABLE groceries (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -79,14 +82,15 @@ Done! You now have the groceries table set up.
 
 
  Configure .env File
+```env
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=               # Leave blank if phpMyAdmin logs in without a password
 DB_NAME=grocery_db
 
-env
-Copy
-Edit
+
+
+``env
 JWT_SECRET=your_jwt_secret   # Optional but recommended for secured endpoints
 
 ### **4. Run the backend**  
