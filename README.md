@@ -44,21 +44,50 @@ npm install
 ### **3. Set Up MySQL Database**  
 1. Create a database:  
    ```sql
-   CREATE DATABASE smart_gets;
+   CREATE DATABASE grocery_db;
    ```  
-2. Import the schema from `database/schema.sql`.  
-3. Configure `.env` file:  
+2. Go to XAMPP control panel and start Apache and MySQL
+3. Steps to Run This in phpMyAdmin
+Go to:
+👉 http://localhost/phpmyadmin
+
+Click the grocery_db database (you may need to create it first if not created).
+
+If not created:
+
+Click "Databases" tab
+
+Enter grocery_db
+
+Click Create
+
+Click SQL tab.
+
+Paste the SQL:
+
+sql
+Copy
+Edit
+CREATE TABLE groceries (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    expiry_date DATE NOT NULL,
+    quantity INT NOT NULL
+);
+Click Go.
+Done! You now have the groceries table set up. 
+4. Configure `.env` file:  
    ```env
    DB_HOST=localhost
    DB_USER=root
-   DB_PASSWORD=yourpassword
+   DB_PASSWORD=yourpassword //empty if http://localhost/phpmyadmin logs in without password
    DB_NAME=smart_gets
-   JWT_SECRET=your_jwt_secret
+   JWT_SECRET=your_jwt_secret //not necessarily needed
    ```
 
 ### **4. Run the backend**  
 ```bash
-python app.py
+python app.py 
 ```
 Access at: `http://localhost:5000`  
 
@@ -66,6 +95,13 @@ Access at: `http://localhost:5000`
 ```bash
 npm run dev
 ```
+### **6. Use postman if needed** 
+Test Adding a Grocery Item (Using Postman)
+Endpoint: POST http://localhost:5000/add
+
+ Get All Items
+Endpoint:
+GET http://localhost:3000/groceries
 
 ---
 
