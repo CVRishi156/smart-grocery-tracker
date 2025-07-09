@@ -66,28 +66,24 @@ Click SQL tab.
 Paste the SQL:
 
  Create groceries Table
-sql
-Copy
-Edit
 CREATE TABLE groceries (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     expiry_date DATE NOT NULL,
     quantity INT NOT NULL
 );
+
 ✅ Click Go in phpMyAdmin.
 
 Done! You now have the groceries table set up.
 
 
  Configure .env File
-env
-Copy
-Edit
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=               # Leave blank if phpMyAdmin logs in without a password
 DB_NAME=grocery_db
+
 env
 Copy
 Edit
